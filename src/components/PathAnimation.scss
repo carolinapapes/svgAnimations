@@ -1,0 +1,24 @@
+
+:root{
+    --path-length: 100;
+}
+
+svg{
+  max-height: 300px;
+  margin: 0 auto; 
+}
+
+.path {
+  stroke-dasharray: var(--path-length);
+  stroke-dashoffset: var(--length-path);
+  fill: rgba(181, 226, 181, 0.569);
+  animation: dash 10s linear infinite reverse ;
+  }
+    
+// Animation doesnt support variables
+@keyframes dash {
+  to {
+      stroke-dashoffset: calc(-6987);
+      fill: rgba(181, 226, 181, 0.089);
+    }
+}

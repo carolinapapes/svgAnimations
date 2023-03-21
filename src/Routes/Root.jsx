@@ -5,7 +5,7 @@ function Root() {
   return (
     <>
       <header>
-        <h1>SVG animations catalog</h1>
+        <h1>🛠️ SVG animations </h1>
       </header>
       <main>
         <div className="card">

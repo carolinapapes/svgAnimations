@@ -35,3 +35,17 @@ main{
         }
     }
 }
+
+.input-group{
+    margin-top: 1.5rem;
+    label{
+        margin-top: 5px;
+    }
+    input{
+        margin-top: -10px;
+    }
+    span{
+        font-size: 0.75rem;
+        margin-top: 5px;
+    }
+}
