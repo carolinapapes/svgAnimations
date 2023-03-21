@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/github.com/carolinapapes/svganimation/static/css/main.d9a5f24b.css",
-    "main.js": "/github.com/carolinapapes/svganimation/static/js/main.339ace7f.js",
-    "index.html": "/github.com/carolinapapes/svganimation/index.html",
-    "main.d9a5f24b.css.map": "/github.com/carolinapapes/svganimation/static/css/main.d9a5f24b.css.map",
-    "main.339ace7f.js.map": "/github.com/carolinapapes/svganimation/static/js/main.339ace7f.js.map"
+    "main.css": "/svgAnimations/static/css/main.d9a5f24b.css",
+    "main.js": "/svgAnimations/static/js/main.339ace7f.js",
+    "index.html": "/svgAnimations/index.html",
+    "main.d9a5f24b.css.map": "/svgAnimations/static/css/main.d9a5f24b.css.map",
+    "main.339ace7f.js.map": "/svgAnimations/static/js/main.339ace7f.js.map"
   },
   "entrypoints": [
     "static/css/main.d9a5f24b.css",
