@@ -1,0 +1,45 @@
+//define variables should I define them via react or css?
+:root {
+  --path-length: 7455;
+  --path-text-length-hello: 573;
+  --path-text-length-world: 573;
+}
+
+.path {
+  stroke-dasharray: calc(var(--path-length));
+  stroke-dashoffset: calc(var(--path-length));
+}
+
+.hello {
+  stroke-dasharray: var(--path-text-length-hello);
+  stroke-dashoffset: var(--path-text-length-hello);
+  // animation: hello-dash 10s linear infinite;
+}
+
+.world {
+  stroke-dasharray: var(--path-text-length-world);
+  stroke-dashoffset: var(--path-text-length-world);
+}
+
+// Animation doesnt support variables
+.path {
+  &.trigger {
+    transition: all 7s linear;
+    stroke-dashoffset: 0;
+  }
+}
+
+.world {
+  &.trigger {
+    transition: all 3.5s linear;
+    transition-delay: 3.5s;
+    stroke-dashoffset: 0;
+  }
+}
+
+.hello {
+  &.trigger {
+    transition: all 3.5s linear;
+    stroke-dashoffset: 0;
+  }
+}

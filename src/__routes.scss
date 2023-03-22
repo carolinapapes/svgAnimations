@@ -1,56 +1,58 @@
 // main url
 
-body{
-    background-color: #202020;
-    height: 100vh;
-    width: 100vw;
-    display: grid;
-    grid-template-rows: 100px 1fr 1fr;
+body {
+  background-color: #202020;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: 100px 1fr 1fr;
 
-    font-size: 1.5rem;
-    color: #e3e3e3;
-    padding: 3rem;
-}
-
-main{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1rem;
-    padding-top: 3rem
-}
-.card{
-    background-color: #2e2e2e;
-    border-radius: 1rem;
-    box-shadow: 0 0 1rem rgba(0,0,0,0.1);
-    padding: 2rem;
-    display: grid;
-    grid-template-rows: min-content 1fr;
-    grid-gap: 2rem;
-    margin-bottom: 1rem;
-    &__content{
-        &--title{
-            font-size: 1rem;
-            font-weight: 700;
-        }
-        
-    }
-    
-}
-.col-span-2{
-    grid-column: span 2;
-    height: min-content;
+  font-size: 1.5rem;
+  color: #e3e3e3;
+  padding: 3rem;
 }
 
-.input-group{
-    margin-top: 1.5rem;
-    label{
-        margin-top: 5px;
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  padding-top: 3rem;
+}
+.card {
+  background-color: #2e2e2e;
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  grid-gap: 2rem;
+  margin-bottom: 1rem;
+  &__content {
+    &--title {
+      font-size: 1rem;
+      font-weight: 700;
     }
-    input{
-        margin-top: -10px;
-    }
-    span{
-        font-size: 0.75rem;
-        margin-top: 5px;
-    }
+  }
+}
+.col-span-2 {
+  grid-column: span 2;
+  height: min-content;
+}
+
+.input-group {
+  margin-top: 1.5rem;
+  label {
+    margin-top: 5px;
+  }
+  input {
+    margin-top: -10px;
+  }
+  span {
+    font-size: 0.75rem;
+    margin-top: 5px;
+  }
+}
+
+button {
+  margin-top: 30px;
 }
