@@ -1,24 +1,58 @@
 
 :root{
     --path-length: 100;
+    --path-text-length-hello: 100;
+    --path-text-length-world: 100;
 }
 
 svg{
-  max-height: 300px;
+  max-height: 400px;
   margin: 0 auto; 
 }
 
 .path {
   stroke-dasharray: var(--path-length);
   stroke-dashoffset: var(--length-path);
-  fill: rgba(181, 226, 181, 0.569);
-  animation: dash 10s linear infinite reverse ;
+  fill: #8585852c;
+  animation: dash 5s linear infinite reverse ;
   }
     
 // Animation doesnt support variables
 @keyframes dash {
   to {
-      stroke-dashoffset: calc(-6987);
-      fill: rgba(181, 226, 181, 0.089);
+      stroke-dashoffset: -6987;
     }
+}
+.hello{
+  fill:none;
+  stroke:#cfcfcf;
+  stroke-width:3px;
+  stroke-dasharray: var(--path-text-length-hello);
+  stroke-dashoffset: var(--path-text-length-hello);
+  animation: hello-dash 10s linear infinite;
+}
+@keyframes hello-dash {
+  to {
+      stroke-dashoffset: -573;
+    }
+}
+.world{
+  fill:none;
+  stroke:#cfcfcf;
+  stroke-width:3px;
+  stroke-dasharray: var(--path-text-length-world);
+  stroke-dashoffset: var(--path-text-length-world);
+  animation: world-dash 10s linear infinite;
+  animation-delay: 5s
+}
+@keyframes world-dash {
+  to {
+      stroke-dashoffset: -552;
+    }
+}
+
+.hello-outline, .world-outline{
+  fill:none;
+  stroke:#231f20;
+  stroke-width:0.1px;
 }
