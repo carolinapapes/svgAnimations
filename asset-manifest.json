@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/svgAnimations/static/css/main.d9a5f24b.css",
-    "main.js": "/svgAnimations/static/js/main.339ace7f.js",
+    "main.css": "/svgAnimations/static/css/main.5a21f002.css",
+    "main.js": "/svgAnimations/static/js/main.a6903934.js",
     "index.html": "/svgAnimations/index.html",
-    "main.d9a5f24b.css.map": "/svgAnimations/static/css/main.d9a5f24b.css.map",
-    "main.339ace7f.js.map": "/svgAnimations/static/js/main.339ace7f.js.map"
+    "main.5a21f002.css.map": "/svgAnimations/static/css/main.5a21f002.css.map",
+    "main.a6903934.js.map": "/svgAnimations/static/js/main.a6903934.js.map"
   },
   "entrypoints": [
-    "static/css/main.d9a5f24b.css",
-    "static/js/main.339ace7f.js"
+    "static/css/main.5a21f002.css",
+    "static/js/main.a6903934.js"
   ]
 }
