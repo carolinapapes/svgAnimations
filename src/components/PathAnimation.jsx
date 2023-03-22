@@ -1,10 +1,13 @@
 import React, { useRef } from 'react';
-import usePathAnimationGeneric from './usePathAnimationGeneric';
+import usePathAnimation from './usePathAnimation';
 import './PathAnimation.scss';
 
 function PathAnimation() {
   const path = useRef();
-  usePathAnimationGeneric(path, '--path-length');
+  const { trigger, setTrigger } = usePathAnimation(path, '--path-length');
+  const handleClick = () => {
+    setTrigger((prev) => !prev);
+  };
   // const [length, setLength] = useState('0');
   // const [maxPath, setMaxPath] = useState('0');
   // const addLength = (e) => {
@@ -29,8 +32,8 @@ function PathAnimation() {
       >
         <path
           ref={path}
-          className="path"
-          fill="none"
+          className={`path ${trigger ? 'trigger' : ''}`}
+          fill="#8585852c"
           stroke="#9b9b9b"
           strokeWidth="6"
           strokeMiterlimit="0"
@@ -38,8 +41,11 @@ function PathAnimation() {
           transform="translate(21.85 78.21)"
         />
       </svg>
-
+      <button type="button" onClick={handleClick}>
+        click me twice!!
+      </button>
       {/* <div className="input-group"> */}
+
       {/* eslint-disable-next-line */}
       {/* <label htmlFor="pathlength">
           <p>
